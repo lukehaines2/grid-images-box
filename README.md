@@ -3,4 +3,4 @@ CSS grid solution to a large highlighted image and 3 smaller evenly sized images
 
 # Resulting output
 
-![grid-image-bos](./grid-result.png)
+![grid-image-result](./grid-result.png){:height="50%" width="50%"}
