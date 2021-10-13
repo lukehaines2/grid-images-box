@@ -9,11 +9,40 @@
 </head>
 
 <body>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: 200px 100px;
+      gap: 15px;
+      justify-content: center;
+      align-content: end;
+    }
+
+    .highlighted-img {
+      grid-column: 1 / 4;
+    }
+
+    .img-1 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .img-2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .img-3 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  </style>
   <div class="gallery">
-    <img src="https://picsum.photos/200/300" alt="highlighted-img">
-    <img src="https://picsum.photos/200/300?grayscale" alt="img-1-randomly-generated">
-    <img src="https://picsum.photos/200/300?grayscale" alt="img-2-randomly-generated">
-    <img src="https://picsum.photos/200/300?grayscale" alt="img-3-randomly-generated">
+    <img class="highlighted-img" src="https://picsum.photos/330/200" alt="highlighted-img">
+    <img class="img-1" src="https://picsum.photos/100/100?grayscale" alt="img-1-randomly-generated">
+    <img class="img-2" src="https://picsum.photos/100/100?blur" alt="img-2-randomly-generated">
+    <img class="img-3" src="https://picsum.photos/100/100?grayscale" alt="img-3-randomly-generated">
   </div>
 </body>
 
